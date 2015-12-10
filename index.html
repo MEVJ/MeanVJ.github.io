@@ -32,9 +32,17 @@
         });
     </script>
     <style>
-        ul{
-         list-style-type: none;
-        }
+    ul {
+      padding: 0;
+      margin: 0;
+      display: block;
+      list-style-type: none
+    }
+    li {
+      display:list-item;
+      width: 100%; /* sometimes firefox gives issue*/
+      word-break: break-all; /* break word in next line, if no space*/
+    }
     </style>
 </head>
 <body>
@@ -90,7 +98,6 @@
 
       </div>
     </div>
-  </div>
 </body>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
 </html>
